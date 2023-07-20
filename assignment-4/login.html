@@ -4,19 +4,64 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>login form</title>
+    <style>
+        .main{
+            background-color:  rgb(202, 164, 177);
+            border: 2px solid black;
+            border-radius: 5px;
+            width: 500px;
+            height:900px ;
+            padding: 50px;
+            margin-left: ;
+        }
+        body{
+            margin-left: 30%;
+            background-color: rgb(183, 45, 94);
+        }
+        h3{
+            margin-left: 30%;
+        }
+        .input{
+            margin:4px;
+            width: 100%;
+            height: 30px;
+            border-radius: 5px;
+            border: 2px solid  rgb(228, 24, 96);
+            background-color: rgb(214, 195, 202);
+
+        }
+        .dto{
+            margin-right: 3px;
+            width: 45%;
+            height: 30px;
+            border-radius: 5px;
+            border: 2px solid  rgb(228, 24, 96);
+            background-color: rgb(214, 195, 202);
+
+        }
+        .btn{
+            margin-left: 40%;
+            height: 40px;
+            width: 70px;
+            padding: 4px;
+            background-color: rgb(123, 123, 193);
+            border: 2px solid blue;
+            border-radius: 10px;
+        }
+    </style>
 </head>
 <body>
-    <div align="center">
+    <div class="main">
         <h3>registration form</h3>
-        <label for="firstname">Your Name</label><br><br>
-        <input type="text"  placeholder="first name" id="firstname" required  >
+        <label for="firstname" >Your Name</label><br><br>
+        <input type="text"  placeholder="first name" id="firstname" required class="input" >
         <label for="lastname"></label>
-        <input type="text" placeholder="last name" id="lastname" required><br><br>
-        <label for="date">Date Of Birth</label><br><br>
-        <input type="date"  placeholder="" id="date" required >
+        <input type="text" placeholder="last name" id="lastname" required class="input"><br><br>
+        <label for="date" >Date Of Birth</label><br><br>
+        <input type="date"  placeholder="" id="date" required class="dto">
         <label for="age"></label>
-        <input type="number" placeholder="age" id="age" required><br><br>
-        <label for="">gender</label><br><br>
+        <input type="number" placeholder="age" id="age" required class="dto"><br><br>
+        <label for="" >gender</label><br><br>
         <input type="radio" name="gender" id="male">
 
         <label for="male">male</label>
@@ -25,9 +70,9 @@
         
         <input type="radio" name="gender" id="other">
         <label for="other">other</label><br><br>
-        <label for="">select your course</label><br><br>
-        <input list="select course">
-        <datalist id="select course">
+        <label for="" >select your course</label><br><br>
+        <input list="select course" class="dto" >
+        <datalist id="select course" >
             <option value="">html</option>
             <option value="">css</option>
             <option value="">javascript</option>
@@ -37,29 +82,29 @@
             <option value="">aws</option>
             <option value="">express js</option>
         </datalist><br><br>
-        <label for="collge">your college </label><br><br>
+        <label for="collge" >your college </label><br><br>
        
-        <select name="" id="collge">
+        <select name="" id="collge" class="dto" >
             <option value="tgpcet">tgpcet</option>
             <option value="agpcet">agpcet</option>
-        </select><br><br>
+        </select ><br><br>
         <label for="address">Adrees</label><br><br>
-        <input type="text" placeholder="streat address" name="" id="address" required>
+        <input type="text" placeholder="streat address" name="" id="address" required class="dto">
         <label for="address2"></label>
-        <input type="text" name="" id="address2" placeholder="street address line 2" required><br><br>
+        <input type="text" name="" id="address2" placeholder="street address line 2" required class="dto"><br><br>
         <label for="city"></label>
-        <input type="text" name="" placeholder="city" id="city" required>
+        <input type="text" name="" placeholder="city" id="city" required class="dto">
         <label for="region"></label>
-        <input type="text" name="" id="region" placeholder="region" required><br><br>
+        <input type="text" name="" id="region" placeholder="region" required class="dto"><br><br>
         <label for="contant">Emergancy contant</label><br><br>
-        <input type="number" placeholder="first" id="contant" required>
+        <input type="number" placeholder="first" id="contant" required class="dto">
         <label for="contant2"></label>
-        <input type="number" name="" placeholder="second" id="contant2" required><br><br>
-        <label for="email">email</label><br><br>
-        <input type="email" placeholder="email" id="email" required>
+        <input type="number" name="" placeholder="second" id="contant2" required class="dto"><br><br>
+        <label for="email" >email</label><br><br>
+        <input type="email" placeholder="email" id="email" required class="dto">
         <label for="password"></label>
-        <input type="password" placeholder="password" id="password"><br><br>
-        <input type="button" value="register ">
+        <input type="password" placeholder="password" id="password" class="dto"><br><br>
+        <input type="button" value="register " class="btn">
     </div>
 </body>
 </html>
